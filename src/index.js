@@ -7,7 +7,7 @@ class Layout extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Rex</h1>
+        <h1>Login Authentication</h1>
       </React.Fragment>
     );
   }

@@ -1,3 +1,4 @@
+/* Css reset Section */
 *,
 *:before,
 *:after {
@@ -8,10 +9,136 @@
   border: 0;
   outline: 0;
 }
+/* --Css reset  Section */
 
-input {
-  display: block;
-  padding: 3px 10px;
-  margin: 10px 0px;
-  border: 1px solid black;
+/* Hero Section  */
+
+.hero nav {
+  background-color: #1d3557;
+  color: #f1faee;
+  font-weight: 400;
+  text-align: center;
+  padding: 30px;
 }
+
+.hero nav button {
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  background-color: #e63946;
+  color: #f1faee;
+  transition: all 0.5s ease-out;
+}
+
+.hero nav button:hover {
+  cursor: pointer;
+  background-color: #c81927;
+}
+
+/* --Hero Section  */
+
+/* Login Section */
+.login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.63);
+  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.63);
+}
+
+.login .loginContainer {
+  background-color: #1d3557;
+  padding: 70px 40px;
+  max-width: 300px;
+}
+
+.login .loginContainer label {
+  color: #f1faee;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.login .loginContainer input {
+  display: block;
+  padding: 10px 10px;
+  margin: 10px 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+  line-height: 1;
+  color: #f1faee;
+}
+
+.login .loginContainer p {
+  color: #f1faee;
+}
+
+.Btn_Container button {
+  margin: 12px 0px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  background-color: #e63946;
+  color: #f1faee;
+  transition: all 0.5s ease-out;
+}
+
+.Btn_Container button:hover {
+  cursor: pointer;
+  background-color: #c81927;
+}
+
+.Btn_Container span {
+  color: #a7d9dc;
+  text-decoration: underline;
+}
+
+.Btn_Container span:hover {
+  cursor: pointer;
+}
+
+/* --Login Section */
+
+/* 
+  return (
+    <section className="login">
+      <div className="loginContainer">
+        <label>Username</label>
+        <input
+          type="text"
+          autoFocus
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <p className="errorMsg">{emailError}</p>
+        <label>password</label>
+        <input
+          type="password"
+          required
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <p className="error_Msg">{passwordError}</p>
+        <div className="Btn_Container">
+          {hasAccount ? (
+            <>
+              <button onClick={handleLogin}>Sign in</button>
+              <p>
+                Don't have an account?{" "}
+                <span onClick={() => setHasAccount(!hasAccount)}>Sign up</span>
+              </p>
+            </>
+          ) : (
+            <>
+              <button onClick={handleSignup}>Sign up</button>
+              <p>
+                Have an account?{" "}
+                <span onClick={() => setHasAccount(!hasAccount)}>Sign in</span>
+              </p>
+            </>
+          )}
+        </div>
+      </div>
+    </section> */
